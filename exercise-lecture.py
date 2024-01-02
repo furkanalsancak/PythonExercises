@@ -183,3 +183,20 @@ print("".join(word2))
 # except ValueError:
 #     print("Invalid input. Please enter a valid number.")   
 
+
+
+def insert_obj(list_to_edit, obj_to_add, index_of_item):
+
+    current_list = list_to_edit
+    current_index = index_of_item
+    try:
+        current_index = int(current_index)
+    except:
+        print("Please enter int as an index value")
+        
+    current_list.insert(index_of_item,obj_to_add)
+    return current_list
+
+same_list = ['A','B','C','D','E']
+same_list = insert_obj(same_list, "D", 3)
+print(same_list)
