@@ -187,9 +187,31 @@ def is_leap(year):
 year = int(input("Enter a year: "))
 print(is_leap(year))
 '''
+
+'''
 list = [1,3,2,34,10,23]
 list.sort()
 print(list[-2])
+'''
 
 
-# take math fundamentals course
+#*
+#**
+#***
+#****
+#*****
+#****
+#***
+#**
+#*
+#loop for nine rows of our pattern
+#increase number of stars in pattern until the 5th row is reached
+#Then decrease the pattern
+
+pattern = "*"
+for row in range(10):
+    
+    if row <= 5:
+        print(pattern * row)
+    else:
+        print(pattern * (10 - row))

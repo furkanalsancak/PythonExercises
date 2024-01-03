@@ -185,18 +185,83 @@ print("".join(word2))
 
 
 
-def insert_obj(list_to_edit, obj_to_add, index_of_item):
+# def insert_obj(list_to_edit, obj_to_add, index_of_item):
 
-    current_list = list_to_edit
-    current_index = index_of_item
-    try:
-        current_index = int(current_index)
-    except:
-        print("Please enter int as an index value")
+#     current_list = list_to_edit
+#     current_index = index_of_item
+#     try:
+#         current_index = int(current_index)
+#     except:
+#         print("Please enter int as an index value")
         
-    current_list.insert(index_of_item,obj_to_add)
-    return current_list
+#     current_list.insert(index_of_item,obj_to_add)
+#     return current_list
 
-same_list = ['A','B','C','D','E']
-same_list = insert_obj(same_list, "D", 3)
-print(same_list)
+# same_list = ['A','B','C','D','E']
+# same_list = insert_obj(same_list, "D", 3)
+# print(same_list)
+
+'''
+test_string = "This is * a test"
+
+split_string = test_string.split("*")
+joined_list = "*".join(split_string)
+# another_test = " ".join(test_string)
+
+print(split_string)
+
+count = 0
+for char in joined_list:
+    if char.upper() == "T":
+        count += 1
+
+print(f"This is the number of this char : {count} ")
+
+joined_list = joined_list.replace("i", "I", 5)
+print(joined_list)
+'''
+
+'''
+numbers = [1,2,3,4,5]
+
+for num in range(len(numbers)):
+    print(numbers[num])
+    numbers[num] = str(numbers[num])
+
+print(numbers)
+'''
+
+
+'''
+test_dict = {
+    "name" : "Chris"
+}
+
+test_dict["is_funny"] = False
+
+print(test_dict)
+print(test_dict["name"])
+'''
+
+user_db = []
+user = {"username" : "", "password": ""}
+
+while True:
+    user_input = input("Would you like to log in or register? (Enter: login/register)")
+
+    if user_input.strip() == "register":
+        user["username"] = input("Please enter your desired name: ")
+        user["password"] = input("Please enter your desired password: ")
+        
+        is_unique = True
+        for account in user_db:
+            account["username"] == user["username"]
+            is_unique = False
+
+        if is_unique:
+            user_db.append(user)
+            print("User registered")
+        else:
+            print("Cannot register user, username taken")
+    if user_input == "-1":
+        break
