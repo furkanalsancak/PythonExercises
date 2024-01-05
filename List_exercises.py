@@ -89,3 +89,7 @@ for num in nums:
 
 print(total)
 print(total / len(nums))
+
+
+number_list = [x for x in range(50) if x % 2 != 0 if x<30]
+print(number_list)

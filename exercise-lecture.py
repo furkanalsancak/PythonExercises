@@ -255,8 +255,8 @@ while True:
         
         is_unique = True
         for account in user_db:
-            account["username"] == user["username"]
-            is_unique = False
+            if account["username"] == user["username"]:
+                is_unique = False
 
         if is_unique:
             user_db.append(user)

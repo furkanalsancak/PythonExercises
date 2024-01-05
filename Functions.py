@@ -26,28 +26,78 @@ elif cpu_choice == user_choice:
 # print(total)
 
 
-def get_int(display_string = "Enter number : "):
-    '''
-    Continues to ask the user for an int until a valid int is entered
-    '''
-    while True:
+# def get_int(display_string = "Enter number : "):
+#     '''
+#     Continues to ask the user for an int until a valid int is entered
+#     '''
+#     while True:
 
-        user_input = input(display_string)
+#         user_input = input(display_string)
 
-        try:
-            user_input = int(user_input)
-            return user_input
-        except:
-            print("Please only enter number")
+#         try:
+#             user_input = int(user_input)
+#             return user_input
+#         except:
+#             print("Please only enter number")
 
 
-total = 0
-while True:
-    user_choice = get_int()
-    if user_choice == -1:
-        break
-    total += user_choice
+# total = 0
+# while True:
+#     user_choice = get_int()
+#     if user_choice == -1:
+#         break
+#     total += user_choice
 
-print(f"This is the total : {total}")
+# print(f"This is the total : {total}")
+
+
+#LAMBDA FUNCTIONS
+
+# lambda : print("Hello World")
+
+'''
+greeting = lambda : print("Hello World")
+greeting()
+
+add_two = lambda x : x + 2
+print(add_two(10))
+'''
+
+'''
+def add_2(x):
+    return x + 2
+print(add_2(6))
+
+add_two = lambda x : x + 2
+print(add_two(5)) 
+'''
+
+
+def digital_root(n):
+    # Continue the loop until n is a single-digit number
+    while n >= 10:
+        # Convert the number to a list of its digits
+        digits = []
+        for digit in str(n):
+            digits.append(int(digit))
+        
+        # Calculate the sum of the digits
+        digit_sum = sum(digits)
+        
+        # Display the process
+        print(f"{n}  -->  {' + '.join(map(str, digits))} = {digit_sum}", end="  -->  ")
+
+        # Update n with the sum of digits
+        n = digit_sum
+
+    print(n)  # Print the final result
+    return n
+
+# Example usage:
+nums = [942, 456]
+
+for num in nums:
+    result = digital_root(num)
+    print(f"The digital root of {num} is: {result}")
 
 
