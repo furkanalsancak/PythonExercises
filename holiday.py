@@ -30,7 +30,7 @@ def car_rental(rental_days, num_nights):
     #Number of car rental days cannot be more than the number of nights to stay at the hotel
     while True:
         try:
-            rental_days = int(input("Please enter the number of days you want to rent a car: "))
+            #rental_days = int(input("Please enter the number of days you want to rent a car: "))
             if rental_days <= num_nights:
                 total_cost = car_rent_price_per_day * rental_days
                 break

@@ -243,6 +243,7 @@ print(test_dict)
 print(test_dict["name"])
 '''
 
+'''
 user_db = []
 user = {"username" : "", "password": ""}
 
@@ -265,3 +266,34 @@ while True:
             print("Cannot register user, username taken")
     if user_input == "-1":
         break
+'''
+
+
+'''
+item_type = ["number of rupees", 
+             "goblin horns", 
+             "potions", 
+             "unicorn horns", 
+             "dragon tongues"]
+
+item_counts = [1000, 25, 10, 1, 0]
+
+item_dict = {}
+
+# for index, value in enumerate(item_type):
+#     item_dict[value] = item_counts[index]
+
+for index in range(len(item_type)):
+    item_dict[item_type[index]] = item_counts[index]
+
+print(item_dict)
+
+
+'''
+
+from colorama import Fore, Back, Style
+
+print(Fore.RED, Back.BLUE + 'some red text')
+print(Style.DIM + 'and in dim text')
+print(Style.RESET_ALL)
+print("Back to normal now")
