@@ -52,6 +52,7 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # my_dict = {match1:match2 for match1, match2 in zip(list1,list2) if match1 != 7}
 # print(my_dict)
 
+#---------------------------------------------
 nums2 = [1,1,2,1,3,4,3,4,5,5,6,7,8,7,9,9]
 # my_set = set()
 # for n in nums2:
@@ -60,3 +61,17 @@ nums2 = [1,1,2,1,3,4,3,4,5,5,6,7,8,7,9,9]
 
 # my_set = {n for n in nums2}
 # print(my_set)
+#--------------------------------------------------
+
+
+#generator expressions
+#I want to yield 'n*n for each n in nums2
+
+def gen_func(nums2):
+    for n in nums2:
+        yield n*n
+my_gen = gen_func(nums2)
+
+my_gen = (n*n for n in nums)
+for i in my_gen:
+    print(i)

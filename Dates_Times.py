@@ -40,8 +40,13 @@ print(dt_now)
 # dt_utcnow = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
 # print(dt_utcnow)
 
-dt_mtn = dt_now.astimezone(pytz.timezone('US/Mountain'))
-print(dt_mtn)
+# dt_mtn = dt_now.astimezone(pytz.timezone('US/Mountain'))
+# print(dt_mtn)
 
-for tz in pytz.all_timezones:
-    print(tz)
+dt_mtn = datetime.datetime.now()
+print(dt_mtn)
+dt_east = dt_mtn.astimezone(pytz.timezone('US/Eastern'))
+
+# for tz in pytz.all_timezones:
+#     print(tz)
+
