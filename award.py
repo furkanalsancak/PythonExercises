@@ -15,3 +15,4 @@ else:
 
 print("Total time:", total_time, "minutes")
 print("Award:", award)
+print("Hello")
