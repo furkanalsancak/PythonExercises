@@ -7,12 +7,30 @@ class Employee:
         self.first = first
         self.last = last
         self.pay = pay
-        self.email = first + '.' + last + '@company.com'
+        # self.email = first + '.' + last + '@company.com'
 
         Employee.num_of_emps += 1
 
+
+    @property
+    def email(self):
+        return f"{self.first} {self.last}@email.com"
+
+    @property
     def fullname(self):
         return f"{self.first} {self.last}"
+    
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.first = first
+        self.last = last
+
+    @fullname.deleter
+    def fullname(self):
+        print('Delete name!')
+        self.first = None
+        self.last = None
     
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
@@ -34,15 +52,31 @@ class Employee:
         if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
+    
+    def __repr__(self):
+        return f"Employee('{self.first}','{self.last}','{self.pay}')"
+
+    def __str__(self):
+        return f"{self.fullname()} - {self.email}"
 
 
 
 emp_1 = Employee('Furkan', 'Alsancak', 50000)
 emp_2 = Employee('Hakan', 'Alsancak', 60000)
 
-import datetime
-my_date = datetime.date(2016, 7, 11)
-print(Employee.is_workday(my_date))
+print(repr(emp_1))
+print(str(emp_1))
+
+print(int.__add__(1, 2))
+print(str.__add__('a','b'))
+
+
+
+
+
+# import datetime
+# my_date = datetime.date(2016, 7, 11)
+# print(Employee.is_workday(my_date))
 
 '''
 emp_str_1 = 'John-Doe-70000'
