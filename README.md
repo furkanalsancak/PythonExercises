@@ -15,7 +15,7 @@ To make the most of these exercises, follow these steps:
 
 ### Clone the Repository:
 <p>
-On Terminal
+On Terminal<br>
   -git clone https://github.com/furkanalsancak/PythonExercises.git<br>
   -Navigate to the Exercise Directory:<br>
   -Open the problem.py file to understand the requirements of the exercise.<br>
