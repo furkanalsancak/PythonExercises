@@ -1,6 +1,6 @@
 import random as rd
 
-'''
+
 cpu_choice = rd.randint(1,3)
 print(cpu_choice)
 
@@ -11,7 +11,7 @@ if cpu_choice == 1 and user_choice == 2:
     print("Paper beats rock")
 elif cpu_choice == user_choice:
     print("It is a tie!!")
-'''
+
 
 
 # def addition(x, y):
