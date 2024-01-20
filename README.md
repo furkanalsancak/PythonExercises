@@ -14,10 +14,13 @@ The repository contains individual exercises, each with a problem statement and 
 To make the most of these exercises, follow these steps:
 
 ### Clone the Repository:
+<p>
 On Terminal
--git clone https://github.com/furkanalsancak/PythonExercises.git
--Navigate to the Exercise Directory:
--Open the problem.py file to understand the requirements of the exercise.
+  -git clone https://github.com/furkanalsancak/PythonExercises.git<br>
+  -Navigate to the Exercise Directory:<br>
+  -Open the problem.py file to understand the requirements of the exercise.<br>
+</p>
+
 
 ## Exercises Categories
 The exercises cover a wide range of Python topics, including but not limited to:
