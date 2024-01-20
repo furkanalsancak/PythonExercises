@@ -22,7 +22,7 @@ On Terminal
 ## Exercises Categories
 The exercises cover a wide range of Python topics, including but not limited to:
 
-Basic Concepts: Covering fundamental Python concepts like variables, loops, and conditionals.
-Data Structures: Exercises focused on lists, dictionaries, sets, and tuples.
-Functions: Challenges related to defining and using functions in Python.
-Advanced Topics: More complex exercises involving classes, inheritance, and advanced algorithms.
+-Basic Concepts: Covering fundamental Python concepts like variables, loops, and conditionals.
+-Data Structures: Exercises focused on lists, dictionaries, sets, and tuples.
+-Functions: Challenges related to defining and using functions in Python.
+-Advanced Topics: More complex exercises involving classes, inheritance, and advanced algorithms.
