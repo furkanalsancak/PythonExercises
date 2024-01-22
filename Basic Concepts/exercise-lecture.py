@@ -193,8 +193,6 @@ print()
 
 
 
-
-
 item_type = ["number of rupees", 
              "goblin horns", 
              "potions", 
